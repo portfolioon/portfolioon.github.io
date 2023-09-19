@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="author" content="Harry-KIT">
     <title>Speech Sample</title>
+    <style>
+        /* CSS for parent div */
+        .parent-div {
+            border: 1px solid #000; /* Just for visual separation */
+            padding: 10px; /* Add padding for spacing */
+        }
+
+        /* CSS for child divs */
+        .child-div {
+            border: 1px solid #ccc; /* Just for visual separation */
+            padding: 5px; /* Add padding for spacing */
+            margin: 5px; /* Add margin for spacing */
+        }
+    </style>
 </head>
 
 <body>
     <center><h1>HiFi-GAN</h1></center>
-    <div>
-        <div>
+    <div class="parent-div">
+        <div class="child-div">
             <p><b>LJSpeech Dataset</b></p>
             <table>
                 <tread>
@@ -53,7 +67,7 @@
             </table>
         </div>
         
-        <div>
+        <div class="child-div">
             <p><b>HiFi-GAN (KSS Dataset)</b></p>
             <table>
                 <tread>
