@@ -1,0 +1,45 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Linas Kondrackis
+email: linaskondrackis@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  AI Graduate - Robotics Developer - Deep Learning Enthusiast
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Social media profiles - feel free to add more here
+social:
+  - title: linkedin
+    url: https://www.linkedin.com/in/linas-kondrackis/
+  - title: gitlab
+    url: https://gitlab.com/LinasKo
+  - title: github
+    url: https://github.com/LinasKo
+  - title: bitbucket
+    url: https://bitbucket.org/DeKondra/
+
+# Address information
+location: Bristol, UK
+address:
+
+# Build settings
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      thumb_image_url: "assets/test_post/images/1-submarine.png"
+
+# Particles in the background
+show_particles: true

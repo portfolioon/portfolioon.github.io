@@ -1,0 +1,19 @@
+/*
+ * Defines the colors of the website.
+ * Darker colors have higher numbers near them in my system. Starting color marked with 1.
+ */
+
+:root {
+    --main-color-0: #545854;
+    --main-color-1: #323231;
+    --main-color-2: #292A29;
+    --main-color-3: #202122;
+    --main-color-4: #080A08;
+    --side-color-0: #CAF08F;
+    --side-color-1: #94DA0F;
+    --side-color-2: #66A10D;
+    --side-color-3: #2c5108;
+    --text-color-1: #ffffff;
+    --text-color-2: #eeeeee;
+}
+/* Example:   color: var(--side-color);   */
