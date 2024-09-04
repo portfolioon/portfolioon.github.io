@@ -10,19 +10,19 @@ title: Linas Kondrackis
 email: linaskondrackis@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   AI Graduate - Robotics Developer - Deep Learning Enthusiast
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Social media profiles - feel free to add more here
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/linas-kondrackis/
-  - title: gitlab
-    url: https://gitlab.com/LinasKo
+  # - title: gitlab
+  #   url: https://gitlab.com/LinasKo
   - title: github
-    url: https://github.com/LinasKo
-  - title: bitbucket
-    url: https://bitbucket.org/DeKondra/
+    url: https://github.com/speechproject93
+  # - title: bitbucket
+  #   url: https://bitbucket.org/DeKondra/
 
 # Address information
 location: Bristol, UK
