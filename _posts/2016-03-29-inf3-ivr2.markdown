@@ -3,9 +3,9 @@ layout: post
 modalID: modalIvr2
 permalink: /:categories/:slug/
 main_title:  Inf3 - Introduction to Vision and Robotics
-start_date:   2016-02-16
-end_date:     2016-03-29
-thumb_image_url: assets/post_assets/inf3-ivr-2/images/compressed/robot_front.jpg
+start_date:   2024-01-02
+end_date:     2024-12-30
+thumb_image_url: assets/post_assets/inf3-ivr-2/videos/gif/demo_eel.gif
 images:
   - {
     url: "assets/post_assets/inf3-ivr-2/images/compressed/robot_front.jpg",
