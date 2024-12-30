@@ -3,9 +3,9 @@ layout: post
 modalID: modalIvr1
 permalink: /:categories/:slug/
 main_title:  Inf3 - Introduction to Vision and Robotics
-start_date:   2016-01-15
-end_date:     2016-02-15
-thumb_image_url: assets/post_assets/inf3-ivr-1/images/compressed/filter_noisy.png
+start_date:   2024-04-01
+end_date:     ~
+thumb_image_url: assets/post_assets/inf3-ivr-1/videos/HAR-Annotator-demo.mp4
 images:
   - {
     url: "assets/post_assets/inf3-ivr-1/images/compressed/filter_correct.png",
@@ -39,31 +39,31 @@ images:
   }
 category: projects
 course_name: Inf3 - Introduction to Vision and Robotics
-project_title: "Multiple 'robot' tracking in images"
+project_title: "실시간 인간 행동 감지 시스템"
 thumb_text: Tracking of three shapes in a sequence of images using basic shape and color recognition techniques
 collaborators:
-  - Dalius Grazinskis
+  - 가이랏
 tech:
   - Computer Vision
-  - Matlab
+  - Action Detection
 size: medium
 
 ---
 
 <div class="post-content-markdown">
 
-This task required us to track three colored 'robots' in a sequence of images. Images had three different background types and had to work with an unknown forth one, only revealed during assessment.
+걷기, 넘어짐, 싸움 등 다양한 인간 활동을 식별할 수 있는 포괄적인 실시간 행동 감지 시스템을 성공적으로 개발 및 배포했습니다. 특히, 기존 실시간 행동
+감지 구현의 주요 장애물이었던 데이터셋 부족 문제를 해결하기 위해, 자동화된 비디오 주석 시스템을 개발했습니다. 
 {: .text-left}
 
-To tackle the task, we subtracted the background and found morphological operations on the image to reveal the triangles on the top. Shapes were verified to be triangles using a ratio of perimeter and area. Triangle corners were then found - for this K-means clustering was used due to a large number of datapoints at the ends of the triangles. Color reading was then taken just behind the triangle, distinguishing the 'robot'.
+이는 수동 주석 작업의 시간과 비용 제약을 극복하고, 대규모 훈련 데이터셋을 효율적으로 구축할 수 있게 했습니다. 해당 주석 시스템은 YOLOv7 포즈 추정 모델을 활용하여 사람의 키포인트를 자동으로
+추출하고 저장함으로써, 행동 인식을 위한 고품질 데이터셋 생성을 가능하게 했습니다. 
 {: .text-left}
 
-In the end, the solution was robust and managed to track the 'robots' successfully (the failure cases shown occurred during development). The only issue we did not manage to fix was an inefficiency in the plotting, gradually slowing down the program.
+이러한 혁신적인 접근으로 인해 실시간 행동 감지의 실제 구현이 가능해졌으며, 이는 기존에 데이터셋 부족으로 인해 달성하지 못했던 중요한 성과입니다.
 {: .text-left}
 
-Report: [Google Drive](https://drive.google.com/open?id=1wYzYK88y1drcs3xgZwLJoZGRkNKFC8VH){:target="_blank"}
-{: .text-center}
-If you would like to take a look at the code, please contact me.
+Code Repository: [Github](https://github.com/Harry-KIT/HAR-World){:target="_blank"}
 {: .text-center}
 
 </div>
