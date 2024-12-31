@@ -3,9 +3,9 @@ layout: post
 modalID: modalSdp
 permalink: /:categories/:slug/
 main_title: System Design Project
-start_date: 2015-10-05
-end_date:   2016-04-14
-thumb_image_url: assets/post_assets/inf3-sdp/images/compressed/sdp_thumbnail.png
+start_date: 2022-10-05
+end_date:   2023-04-14
+thumb_image_url: assets/post_assets/inf3-sdp/videos/gif/juggling_demo.gif
 images:
   - {
     url: "assets/post_assets/inf3-sdp/images/compressed/in_game_view.png",
@@ -26,26 +26,14 @@ category: projects
 project_title: "System Design Project - Making a Football Robot"
 thumb_text: "An AI-controlled cooperative football playing robot."
 tech:
-  - Robotics
   - Computer Vision
   - OpenCV
   - Python
   - Numpy
-  - Tkinter
-  - Arduino
-  - Lego
   - Linux
-size: extra-large
+size: medium
 collaborators:
-  - James Renwick
-  - Filip Kiniorski
-  - Natasa Ivanis
-  - Andrew Bell
-  - Dimple Gulrajani
-  - Ramsey El Naggar
-  - Naohiro Kakimura
-  - Andrew Smith
-  - Jake Greenshields
+  - 가이랏
 
 ---
 
