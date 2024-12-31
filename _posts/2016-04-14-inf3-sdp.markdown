@@ -5,7 +5,7 @@ permalink: /:categories/:slug/
 main_title: System Design Project
 start_date: 2022-10-05
 end_date:   2023-04-14
-thumb_image_url: assets/post_assets/inf3-sdp/videos/gif/juggling_demo_r2.gif
+thumb_image_url: assets/post_assets/inf3-sdp/videos/gif/juggling_demo_50.gif
 images:
   - {
     url: "assets/post_assets/inf3-sdp/images/compressed/in_game_view.png",
