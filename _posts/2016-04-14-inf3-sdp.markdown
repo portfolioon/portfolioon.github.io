@@ -8,7 +8,7 @@ end_date:   2023-04-14
 thumb_image_url: assets/post_assets/inf3-sdp/videos/gif/juggling_demo_75.gif
 images:
   - {
-    url: "assets/post_assets/inf3-sdp/images/compressed/in_game_view.png",
+    url: "assets/post_assets/inf3-sdp/videos/gif/work.gif",
     caption: "The usual view as seen during a robot game for the operator. Robots that are detected have their orientation shown. Rectangles represent threat (red) and defense zones (black).",
     id: "sdp_in_game"
   }
