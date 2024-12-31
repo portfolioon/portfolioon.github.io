@@ -5,7 +5,7 @@ permalink: /:categories/:slug/
 main_title:  Inf4 - Machine Learning Practical
 start_date:   2016-09-21
 end_date:     2017-03-21
-thumb_image_url: assets/post_assets/inf4-mlp/images/compressed/AUGM_FLIPPED_confusion_matrix.png
+thumb_image_url: assets/post_assets/inf4-mlp/images/original/comic_generation.png
 images:
   - {
     url: "assets/post_assets/inf4-mlp/images/compressed/cifar10_preview.png",
