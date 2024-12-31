@@ -18,7 +18,7 @@ images:
     id: "sdp_color_picker"
   }
   - {
-    url: "assets/post_assets/inf3-sdp/images/compressed/sdp_interference_example.png",
+    url: "assets/post_assets/inf3-sdp/videos/gif/car.gif",
     caption: "Interference of the analogue camera, as seen during the development of the vision system.",
     id: "sdp_interference_example"
   }
