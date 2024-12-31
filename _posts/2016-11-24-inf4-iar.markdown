@@ -3,9 +3,9 @@ layout: post
 modalID: modalIar
 permalink: /:categories/:slug/
 main_title:  Inf4 - Intelligent Autonomous Robotics
-start_date:   2016-09-18
-end_date:     2016-11-24
-thumb_image_url: assets/post_assets/inf4-iar/images/compressed-processed/p_khepera.png
+start_date:   2020-08-10
+end_date:     2023-12-31
+thumb_image_url: assets/post_assets/inf4-av-1/videos/med_demo_1.gif
 images:
   - {
     url: "assets/post_assets/inf4-iar/images/compressed-processed/p_marked_map.png",
