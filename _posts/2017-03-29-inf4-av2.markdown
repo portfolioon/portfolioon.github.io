@@ -10,6 +10,104 @@ images:
   - {
     url: "assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg",
     caption: "FAST corner matching in consecutive frames of the horizontally moving plane. Consecutive frames are superimposed in gray and cyan.",
+    id: "feature_displacement",
+    display: "full"  # Add this to make it full width
+  }
+  - {
+    url: "assets/post_assets/inf4-av-2/images/compressed/x_motion_plane.png",
+    caption: "A single image of horizontally moving plane.",
+    id: "x_motion_plane"
+  }
+  # ... rest of your images ...
+category: projects
+course_name: Inf4 - Advanced Vision
+project_title: "3D Reconstruction Evaluation"
+thumb_text: Evaluation of 3D reconstruction data, given series of source images of a moving textured plane
+collaborators:
+  - Calum McLeod
+tech:
+  - Computer Vision
+  - Matlab
+size: medium
+---
+
+<style>
+.project-image {
+  margin-bottom: 20px;
+}
+
+.project-image-third {
+  width: 33.333%;
+  float: left;
+  padding: 0 10px;
+}
+
+.project-image-full {
+  width: 100%;
+  clear: both;
+  padding: 0 10px;
+}
+
+.project-images::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.project-image img,
+.project-image video {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<div class="post-content-markdown">
+
+<div class="project-images">
+{% for image in page.images %}
+  <div class="project-image {% if image.display == 'full' %}project-image-full{% else %}project-image-third{% endif %}">
+    {% if image.url contains '.webm' or image.url contains '.mp4' %}
+      <video class="proj-img" autoplay loop muted playsinline>
+        <source src="{{ image.url }}" type="video/{% if image.url contains '.webm' %}webm{% else %}mp4{% endif %}">
+      </video>
+    {% else %}
+      <img src="{{ image.url }}" class="img-responsive proj-img">
+    {% endif %}
+    {% if image.caption %}
+      <p class="image-caption">{{ image.caption }}</p>
+    {% endif %}
+  </div>
+{% endfor %}
+</div>
+
+A 3D reconstruction of a textured plane has been carried out. In different sets, the plane was either still or moving either vertically, horizontally, or away with respect to the camera. Given the source images and resulting pointcloud data, the task was to evaluate the accuracy of the reconstruction.
+{: .text-left}
+
+We have applied FAST Corner detection to detect and features of the texture on the plane, letting us track its motion over time. A rectangular region of interest was selected for each dataset using the observed displacement of the features to move together with the plane. The Root Mean Square error was computed in this region to detect the reconstruction accuracy, averaged over time. The resulting error was visualized as a colored plot.
+{: .text-left}
+
+Report: [Google Drive](https://drive.google.com/open?id=1ZpRGiCunMkxpUFoPKrcb-0iSWPA-pJkz){:target="_blank"}
+{: .text-center}
+Code Repository: [GitLab](https://gitlab.com/LinasKo/Inf4-AV-CW2){:target="_blank"}
+{: .text-center}
+
+</div>
+
+
+
+
+<!-- ---
+layout: post
+modalID: modalAv2
+permalink: /:categories/:slug/
+main_title:  Inf4 - Advanced Vision
+start_date:   2016-02-16
+end_date:     2016-03-29
+thumb_image_url: assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg
+images:
+  - {
+    url: "assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg",
+    caption: "FAST corner matching in consecutive frames of the horizontally moving plane. Consecutive frames are superimposed in gray and cyan.",
     id: "feature_displacement"
   }
   - {
@@ -63,4 +161,4 @@ Report: [Google Drive](https://drive.google.com/open?id=1ZpRGiCunMkxpUFoPKrcb-0i
 Code Repository: [GitLab](https://gitlab.com/LinasKo/Inf4-AV-CW2){:target="_blank"}
 {: .text-center}
 
-</div>
+</div> -->
