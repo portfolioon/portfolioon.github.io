@@ -5,10 +5,10 @@ permalink: /:categories/:slug/
 main_title:  Inf4 - Advanced Vision
 start_date:   2016-02-16
 end_date:     2016-03-29
-thumb_image_url: assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg
+thumb_image_url: assets/post_assets/inf4-av-2/images/original/img_with_matches.png
 images:
   - {
-    url: "assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg",
+    url: "assets/post_assets/inf4-av-2/images/original/img_with_matches.png",
     caption: "FAST corner matching in consecutive frames of the horizontally moving plane. Consecutive frames are superimposed in gray and cyan.",
     id: "feature_displacement"
   }
