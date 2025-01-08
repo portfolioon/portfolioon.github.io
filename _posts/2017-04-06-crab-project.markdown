@@ -5,7 +5,7 @@ permalink: /:categories/:slug/
 main_title:  Honours Project - Augmenting a Robotic Model of Fiddler Crab Interaction
 start_date:   2016-09-01
 end_date:     2017-04-06
-thumb_image_url: assets/post_assets/crab/images/compressed/crab_robot.jpg
+thumb_image_url: assets/post_assets/crab/videos/gifs/demo_video.gif
 images:
   - {
     url: "assets/post_assets/crab/images/compressed/crab_robot.jpg",
