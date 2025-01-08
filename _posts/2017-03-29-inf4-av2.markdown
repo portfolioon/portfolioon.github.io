@@ -10,15 +10,14 @@ images:
   - {
     url: "assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg",
     caption: "FAST corner matching in consecutive frames of the horizontally moving plane. Consecutive frames are superimposed in gray and cyan.",
-    id: "feature_displacement",
-    display: "full"  # Add this to make it full width
+    id: "feature_displacement"
   }
   - {
     url: "assets/post_assets/inf4-av-2/images/compressed/x_motion_plane.png",
     caption: "A single image of horizontally moving plane.",
     id: "x_motion_plane"
   }
-  # ... rest of your images ...
+
 category: projects
 course_name: Inf4 - Advanced Vision
 project_title: "3D Reconstruction Evaluation"
@@ -32,52 +31,62 @@ size: medium
 ---
 
 <style>
-.project-image {
-  margin-bottom: 20px;
+.full-width-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px;
 }
 
-.project-image-third {
-  width: 33.333%;
-  float: left;
-  padding: 0 10px;
+.third-width-image {
+    width: 33.333% !important;
+    float: left;
+    padding: 10px;
 }
 
-.project-image-full {
-  width: 100%;
-  clear: both;
-  padding: 0 10px;
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.project-images::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.project-image img,
-.project-image video {
-  width: 100%;
-  height: auto;
+.image-container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
 
 <div class="post-content-markdown">
 
-<div class="project-images">
-{% for image in page.images %}
-  <div class="project-image {% if image.display == 'full' %}project-image-full{% else %}project-image-third{% endif %}">
-    {% if image.url contains '.webm' or image.url contains '.mp4' %}
-      <video class="proj-img" autoplay loop muted playsinline>
-        <source src="{{ image.url }}" type="video/{% if image.url contains '.webm' %}webm{% else %}mp4{% endif %}">
-      </video>
-    {% else %}
-      <img src="{{ image.url }}" class="img-responsive proj-img">
-    {% endif %}
-    {% if image.caption %}
-      <p class="image-caption">{{ image.caption }}</p>
-    {% endif %}
-  </div>
-{% endfor %}
+<div class="image-container">
+    <div class="full-width-image">
+        <img src="assets/post_assets/inf4-av-2/images/compressed/feature_displacement.jpg" class="img-responsive proj-img">
+        <p class="image-caption">FAST corner matching in consecutive frames of the horizontally moving plane. Consecutive frames are superimposed in gray and cyan.</p>
+    </div>
+    
+    <div class="third-width-image">
+        <img src="assets/post_assets/inf4-av-2/images/compressed/x_motion_plane.png" class="img-responsive proj-img">
+        <p class="image-caption">A single image of horizontally moving plane.</p>
+    </div>
+    
+    <div class="third-width-image">
+        <img src="assets/post_assets/inf4-av-2/images/compressed/x_motion_colour.png" class="img-responsive proj-img">
+        <p class="image-caption">RMS errors in region of interest of the horizontally moving plane, also expressing the motion. Red regions represent the highest error and blue represent the lowest.</p>
+    </div>
+    
+    <div class="third-width-image">
+        <img src="assets/post_assets/inf4-av-2/images/compressed/z_static_plane_side_render.png" class="img-responsive proj-img">
+        <p class="image-caption">Pointcloud data of one motionless plane frame, as viewed from the side.</p>
+    </div>
+    
+    <div class="third-width-image">
+        <img src="assets/post_assets/inf4-av-2/images/compressed/z_static_colour.png" class="img-responsive proj-img">
+        <p class="image-caption">RMS error of the region of interest of a motionless plane. Red regions represent the highest error and blue represent the lowest.</p>
+    </div>
+    
+    <div class="third-width-image">
+        <img src="assets/post_assets/inf4-av-2/images/compressed/z_static_plane_region_of_interest.png" class="img-responsive proj-img">
+        <p class="image-caption">Region of interest of a plane, moving away from the camera. Typically, several empirical experiments would be performed when selecting the starting region of interest, to minimize the number of datapoints with missing depth values.</p>
+    </div>
 </div>
 
 A 3D reconstruction of a textured plane has been carried out. In different sets, the plane was either still or moving either vertically, horizontally, or away with respect to the camera. Given the source images and resulting pointcloud data, the task was to evaluate the accuracy of the reconstruction.
