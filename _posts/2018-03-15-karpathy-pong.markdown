@@ -8,12 +8,12 @@ end_date:     2018-04-05
 thumb_image_url: assets/post_assets/karpathy-pong/images/original/result.jpg
 images:
   - {
-    url: "assets/post_assets/karpathy-pong/images/original/result_2.jpg",
+    url: "assets/post_assets/karpathy-pong/images/original/result_2.png",
     caption: "The visualisation of the Atari Pong game being played during training. For simplicity, the agent (right) can move up or down, but not sit idle.",
     id: "game-visualization"
   }
   - {
-    url: "assets/post_assets/karpathy-pong/images/original/result.png",
+    url: "assets/post_assets/karpathy-pong/images/original/result.jpg",
     caption: "Live reporting of the run, on Slack. I've hacked up a very simple bot, allowing to post and update messages directly from the training script.",
     id: "live-training-reports-slack"
   }
