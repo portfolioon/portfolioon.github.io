@@ -8,17 +8,17 @@ end_date:     2018-04-05
 thumb_image_url: assets/post_assets/karpathy-pong/images/original/result.jpg
 images:
   - {
-    url: "assets/post_assets/karpathy-pong/images/original/result.jpg",
+    url: "assets/post_assets/karpathy-pong/images/original/result_2.jpg",
     caption: "The visualisation of the Atari Pong game being played during training. For simplicity, the agent (right) can move up or down, but not sit idle.",
     id: "game-visualization"
   }
   - {
-    url: "assets/post_assets/karpathy-pong/images/compressed/live-training-reports-slack.png",
+    url: "assets/post_assets/karpathy-pong/images/original/result.png",
     caption: "Live reporting of the run, on Slack. I've hacked up a very simple bot, allowing to post and update messages directly from the training script.",
     id: "live-training-reports-slack"
   }
   - {
-    url: "assets/post_assets/karpathy-pong/images/compressed/pong-training.png",
+    url: "assets/post_assets/karpathy-pong/images/original/result_3.png",
     caption: "The outputs seen as the neural network is being trained. 1 is given for a scored point and -1 for every point the default AI scored. In total, 21 points are scored in one epoch.",
     id: "pong-training"
   }
