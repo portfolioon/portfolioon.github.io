@@ -5,7 +5,7 @@ permalink: /:categories/:slug/
 main_title: Lane Line Detection - Basic
 start_date: 2018-07-14
 # end_date:   2018-07-17
-thumb_image_url: assets/post_assets/udacity-lane-line-detection-1/videos/gif/challenge_no_outlier_removal.gif
+thumb_image_url: assets/post_assets/udacity-lane-line-detection-1/images/original/mistral_demo.png
 images:
   - {
     url: "assets/post_assets/udacity-lane-line-detection-1/videos/gif/solidWhiteRight.gif",
