@@ -13,7 +13,7 @@ images:
     id: "sdp_in_game"
   }
   - {
-    url: "assets/post_assets/inf3-sdp/images/compressed/sdp_color_picker.png",
+    url: "assets/post_assets/inf3-sdp/videos/gif/juggling_demo_75.gif",
     caption: "Color picker available to the operator during the match. If needed, the operator can rebalance the color detection thresholds and generally observe the state of the robot.",
     id: "sdp_color_picker"
   }
