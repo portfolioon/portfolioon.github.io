@@ -32,7 +32,7 @@ images:
     caption: "The three 'robots' on the first background. You can see that our methods were successful in plotting their motion path.",
     id: "background_1"
   }
-    - {
+  - {
     url: "assets/post_assets/inf3-ivr-1/videos/mp4/S001C002P005R002A009_rgb_hp.mp4",
     caption: "The three 'robots' on the first background. You can see that our methods were successful in plotting their motion path.",
     id: "background_1"
