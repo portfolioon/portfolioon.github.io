@@ -24,7 +24,7 @@ images:
   }
 category: projects
 project_title: "시뮬레이션 자동차의 경로 계획"
-thumb_text: Path Planning of a simulated car, with faulty simulator.
+thumb_text: 시뮬레이션 자동차의 경로 계획.
 tech:
   - Planning
   - C++
