@@ -8,32 +8,32 @@ end_date:     2017-04-06
 thumb_image_url: assets/post_assets/crab/images/original/logo.jpg
 images:
   - {
-    url: "assets/post_assets/crab/videos/gifs/color_res_1.mp4",
+    url: "assets/post_assets/crab/videos/mp4/color_res_1.mp4",
     caption: "The Crab Robot. Motors of the omnidirectional wheels are powered by the Arduino board. Images from the two-sided fisheye camera are processed by the FitPC with Linux Mint (green box). In the middle, connected with the rainbow cable, you can see a small Inertial Measurement Unit (IMU).",
     id: "crab_robot"
   }
   - {
-    url: "assets/post_assets/crab/videos/gifs/color_res_2.mp4",
+    url: "assets/post_assets/crab/videos/mp4/color_res_2.mp4",
     caption: "View from the Crab Robot, with crab ommatidia filter and robot's self-masking applied. Ommatidia are clusters of photosensitive cells in an eye of arthropods. Crab eyes allow them to see in high resolution along the horizon, but with a low resolution above and below it. The filter was created by Theodoros Stouraitis and Evripidis Gkanias",
     id: "masked_ommatidia_view"
   }
   - {
-    url: "assets/post_assets/crab/videos/gifs/123.jpg",
+    url: "assets/post_assets/crab/images/original/123.jpg",
     caption: "The Crab Robot, as viewed through the overhead tracking tool. I have attached colored sheets to the robot to be able to detect its orientation. Centroids of the detected sheets and the calculated orientation of the robot are displayed.",
     id: "overhead_view"
   }
   - {
-    url: "assets/post_assets/crab/videos/gifs/birdeye_result.mp4",
+    url: "assets/post_assets/crab/videos/mp4/birdeye_result.mp4",
     caption: "Tracking of FAST features as the camera is slowly rotated to the right. Here, roll, pitch and yaw are not yet correlated with actual orientation.",
     id: "fast_features"
   }
   - {
-    url: "assets/post_assets/crab/videos/gifs/SLAM_res_1.mp4",
+    url: "assets/post_assets/crab/videos/mp4/SLAM_res_1.mp4",
     caption: "The crab view with object detection filter applied. Pink was chosen as the color for significant objects. Both the burrow (pink sheets of paper below the horizon), and the predator (pink object above the horizon) would be highlighted.",
     id: "filtered_view"
   }
   - {
-    url: "assets/post_assets/crab/videos/gifs/SLAM_res_2.mp4",
+    url: "assets/post_assets/crab/videos/mp4/SLAM_res_2.mp4",
     caption: "Example of a color picker in action. The regions with colors between min and max are detected, with the min and max values saved upon user input.",
     id: "color_picker_example"
   }
