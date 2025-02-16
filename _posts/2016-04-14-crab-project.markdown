@@ -2,7 +2,7 @@
 layout: post
 modalID: modalCrab
 permalink: /:categories/:slug/
-main_title:  Honours Project - Augmenting a Robotic Model of Fiddler Crab Interaction
+main_title:  OpenCV 및 ORB-SLAM2 시스템 구현 연구
 
 thumb_image_url: assets/post_assets/crab/images/original/logo.jpg
 images:
@@ -32,7 +32,7 @@ images:
   }
 category: projects
 course_name: Honours Project
-project_title: Augmenting a Robotic Model of Fiddler Crab Interaction
+project_title: OpenCV 및 ORB-SLAM2 시스템 구현 연구
 thumb_text: Improvements to Localization system of a robotic crab using Optical Flow
 collaborators:
 tech:
@@ -42,34 +42,22 @@ tech:
   - Python
   - Numpy
   - Linux
-size: extra-large
+size: medium
 
 ---
 
 <div class="post-content-markdown">
 
-The robotic model of a fiddler crab is a four-wheeled vehicle, capable of omnidirectional movement, foraging behavior, predator detection, evasion, and retreat to the burrow. It uses a two-sided fisheye camera (RICOH THETA S) and a specific crab-eye filter, specifically chosen and designed to mimic the visual system of the crab.
-{: .text-left}
+OpenCV 구현 프로젝트의 경우, 다음과 같은 네 가지 주요 기능을 C++로 구현했습니다:
 
-As my final project in University of Edinburgh, I looked for ways to improve the system by introducing new features, related to modeling the real crabs and improving the reliability of the current system. The list of contributions I made is as follows:
-{: .text-left}
-
-* Improved the foraging behavior of the robot. For as much as the path integration allows it, the robot attempts to orient itself towards its burrow. Furthermore, the foraging behavior no longer relies on random walk and more closely matches the behavior of crabs in nature.
-* Developed several tools for the system:
-  *  Color picking tool allows to pick and store color information of color ranges. The values are integrated into the object detection framework, allowing quick predator and burrow color tweaking. Code Repository: [GitLab](https://gitlab.com/LinasKo/camera_color_picker){:target="_blank"}
-  * Self-masking tool masks the crab from itself, preventing it from mistaking colors of its chassis and wires for the burrow. This replaced the previous ad-hoc solution, where the crab was covered with post-it notes and paper.
-  * Designed and implemented an overhead tracker of the robot, based on visual markers, on the robot. It was used to gather and correlate observed robot rotation with optical flow data from the robot. If needed, additional data such as robot’s rotation, estimated by the path integration system, can be tracked and analyzed.
-* Experiments were performed with an elevated stationary object, used as a reference, aimed to help the robot estimate its rotation. Results have shown that with the crab eye filter, the robot is incapable of detecting even a bright A4 sheet, 2.20 meters away from it.
-* I have found and corrected two bugs in the previously developed robot’s system, that impacted the way movement trajectory was calculated.
-* Implemented, but did not achieve success of rotation and translation recovery, based on optical flow and Essential Matrix decomposition. I believe this is due to the errors introduced when dewarping a fisheye image.
-* Measured the correlation between observed optical flow and pure rotations of the robot. The relation is (surprisingly) linear. However, the function is location specific, meaning that without translation tracking or additional optimization, the usage of first-principles-based optical flow does not improve the path integration system.
-{: .text-left}
-
-Ultimately, the project explored different way that the path integration system could be improved, focusing on optical flow. Auxiliary tools that were developed in the process open up new ways of interacting with the robot, as well as covering some weaker points of the previous system.
-{: .text-left}
+1. 컬러 히스토그램 역투영: 이미지에서 특정 영역의 색상 분포를 분석하고, 이를 기반으로 유사한 색상 영역을 검출하는 알고리즘을 구현했습니다. YCrCb 색상 공간을 활용하여 보다 정확한 색상 검출이 가능하도록 했습니다.
+2. HSV 기반 색상 분할: HSV 색상 공간에서 색상(Hue)과 채도(Saturation) 값을 트랙바로 조절하여 실시간으로 특정 색상 영역을 분할할 수 있는 시스템을 구현했습니다.
+3. 영상 원근 변환: 차량 전방 카메라로 촬영된 영상에서 특정 영역을 Birds-eye view로 변환하는 원근 변환을 구현했습니다. 네 개의 참조점을 이용하여 투시 변환 행렬을 계산하고 적용했습니다.
+4. 숫자 인식 시스템: 템플릿 매칭 방식을 사용하여 이미지 내의 숫자를 인식하는 시스템을 구현했습니다. 외곽선 검출과 영역 분할을 통해 개별 숫자를 추출하고, 미리 저장된 템플릿과 비교하여 인식을 수행합니다.
+5. ORB-SLAM2의 경우, 이는 실시간 단안 카메라 SLAM 시스템으로, ORB 특징점을 활용하여 카메라의 위치를 추적하고 3D 맵을 생성하는 시스템입니다. 이 시스템은 초기화, 트래킹, 로컬 매핑, 루프 클로징 등의 주요 모듈로 구성되어 있으며, 실시간으로 정확한 위치 추정과 맵 생성이 가능합니다. 학습 목적으로 이 시스템을 구현하고 분석하여 SLAM의 핵심 개념들을 이해하는데 중점을 두었습니다.
 
 <br>
-Code Repository: [GitHub](https://github.com/gmission-official/YOLOv8-Semantic-Segmentation){:target="_blank"}
+Code Repository: [GitHub](https://github.com/Harry-KIT){:target="_blank"}
 {: .text-center}
 
 </div>
