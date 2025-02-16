@@ -6,7 +6,9 @@ main_title:  양식장 자동 먹이 모니터링 시스템
 
 thumb_image_url: assets/post_assets/inf3-ivr-2/videos/gif/demo_eel.gif
 
+category: projects
 project_title: "양식장 자동 먹이 모니터링 시스템"
+thumb_text: 양식장 자동 먹이 모니터링 시스템
 
 tech:
   - Yolov8
