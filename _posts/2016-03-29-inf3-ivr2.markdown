@@ -2,52 +2,27 @@
 layout: post
 modalID: modalIvr2
 permalink: /:categories/:slug/
-main_title:  Inf3 - Introduction to Vision and Robotics
-start_date:   2024-01-02
-end_date:     2024-12-30
+main_title:  양식장 자동 먹이 모니터링 시스템 
+
 thumb_image_url: assets/post_assets/inf3-ivr-2/videos/gif/demo_eel.gif
-images:
-  - {
-    url: "assets/post_assets/inf3-ivr-2/images/compressed/robot_front.jpg",
-    caption: "Front of the robot as it is running.",
-    id: "robot_front"
-  }
-  - {
-    url: "assets/post_assets/inf3-ivr-2/images/compressed/robot_side.jpg",
-    caption: "Side of the robot as it is running.",
-    id: "robot_side"
-  }
-  - {
-    url: "assets/post_assets/inf3-ivr-2/images/compressed/sense_code.png",
-    caption: "Example procedure for the robot to look around and choose an obstacle-free path before going. This is also an example of the block-based language we used to write the program.",
-    id: "sense_code"
-  }
+
 category: projects
-course_name: Inf3 - Introduction to Vision and Robotics
-project_title: "PID control exploration for self-balancing robot"
-thumb_text: Analysis of PID control variables and implementation of obstacle avoidance behavior in a two-wheeled self-balancing robot
-collaborators:
-  - Dalius Grazinskis
+project_title: "양식장 자동 먹이 모니터링 시스템"
+
 tech:
-  - Robotics
-  - Computer Vision
-  - Lego Mindstorms EV3
+  - Yolov8
+  - DeepSort
+  - PyQt5
 size: medium
 
 ---
 
 <div class="post-content-markdown">
 
-The task given to us consisted of four stages:
-* Construct a two-wheeled robot that can balance itself. Usage of official Lego instructions for both robot design and the code was permitted, allowing us to quickly come up with a working system.
-* Experiment with different variables in the PID control and analyze the robot behavior.
-* Find such values in the PID control that the robot struggles to keep balance, but does not completely fall over.
-* Implement either line following using an IR color sensor or obstacle avoidance using an ultrasonic sensor. We have chosen to perform the latter. The robot was redesigned to have a rotating head to scan the environment and would move where no objects were detected.
-{: .text-left}
+장어 양식장의 먹이 공급을 효율적으로 관리하기 위한 인공지능 기반 모니터링 시스템입니다. YOLOv8 세그멘테이션 모델을 활용하여 수조 내의 먹이를 실시간으로 감지하고, DeepSORT 알고리즘을 통해 먹이의 이동 경로를 추적합니다. PyQt5를 이용해 사용자 친화적인 인터페이스를 구현했으며, 시스템을 통해 먹이의 위치와 소비 패턴을 실시간으로 확인할 수 있습니다. 이를 통해 양식장의 먹이 낭비를 줄이고 효율적인 급이 관리가 가능해졌습니다.
 
-Report: [Google Drive](https://drive.google.com/open?id=1SnbbNkHMdz9dvIcwKRAZnuuKPNzqTMip){:target="_blank"}
-{: .text-center}
-If you would like to take a look at the code, please contact me.
+<br>
+Code Repository: [GitHub](https://github.com/gmission-official/YOLOv8-Semantic-Segmentation){:target="_blank"}
 {: .text-center}
 
 </div>
