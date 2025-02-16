@@ -30,7 +30,7 @@ images:
     url: "assets/post_assets/crab/videos/mp4/SLAM_res_2.mp4",
     id: "color_picker_example"
   }
-# category: projects
+category: projects
 course_name: Honours Project
 project_title: OpenCV 및 ORB-SLAM2 시스템 구현 연구
 # thumb_text: Improvements to Localization system of a robotic crab using Optical Flow
