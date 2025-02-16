@@ -31,7 +31,7 @@ images:
     id: "color_picker_example"
   }
 # category: projects
-# course_name: Honours Project
+course_name: Honours Project
 project_title: OpenCV 및 ORB-SLAM2 시스템 구현 연구
 # thumb_text: Improvements to Localization system of a robotic crab using Optical Flow
 # collaborators:
