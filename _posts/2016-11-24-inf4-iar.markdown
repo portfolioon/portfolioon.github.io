@@ -6,15 +6,8 @@ main_title:  Medical AI
 start_date:   2020-08-10
 end_date:     2023-12-31
 thumb_image_url: assets/post_assets/inf4-av-1/videos/med_demo_1.gif
-# images:
-#   - {
-#     url: "assets/post_assets/inf4-iar/images/compressed-processed/p_marked_map.png",
-#     caption: "Final map of the arena, used for Task 3. Nest is the official starting locations of the robot that it starts from (any orientation) and points are locations with 'food'. Robot needed to find food locations and bring the pellet to the nest. Pickup and dropping of the pellets were signaled by the arbiter with the press of the space bar.",
-#     id: "p_marked_map"
-#   }
 
 category: projects
-# course_name: Inf4 - Intelligent Autonomous Robotics
 project_title: "Medical AI"
 thumb_text: Medical AI
 collaborators:
@@ -28,32 +21,32 @@ size: large
 <div class="post-content-markdown">
 
 **사업명: (한국지능정보사회진흥원) 인공지능 학습용 데이터 구축 사업**
-기간: 2020-08-10 ~ 2020-12-31
-역할: 데이터 전처리
+* 기간: 2020-08-10 ~ 2020-12-31
+* 역할: 데이터 전처리
 
 **사업명: (보건산업진흥원) 암의 예방, 의료이용, 사망에서의 건강불평등 개선을 위한 보건의료 빅데이터 연계 연구**
-기간: 2020-08-10 ~ 2021-06-19
-역할: 데이터 전처리
+* 기간: 2020-08-10 ~ 2021-06-19
+* 역할: 데이터 전처리
 
 **사업명: (용역) 의료 빅데이터 기반 약물 처방오류 패턴 탐지 기술 개발**
-기간: 2021-01-01 ~ 2021-08-31
-역할: 모델 개발
+* 기간: 2021-01-01 ~ 2021-08-31
+* 역할: 모델 개발
 
 **사업명: (보건산업진흥원) 중환자실 내 다장기 합병증 예측 시스템 개발**
-기간: 2021-04-01 ~ 2023-12-31
-역할: 데이터 전처리 및 모델 개발
+* 기간: 2021-04-01 ~ 2023-12-31
+* 역할: 데이터 전처리 및 모델 개발
 
 **사업명: (대전TP) 시장경제기반 구독 방식을 통한 헬스데이터 유통 플랫폼 개발 및 운영 지원**
-기간: 2022-05-01 ~ 2022-11-30
-역할: 서버 및 데이터 관리
+* 기간: 2022-05-01 ~ 2022-11-30
+* 역할: 서버 및 데이터 관리
 
 **사업명: (한국지능정보사회진흥원) 인공지능 학습용 데이터 구축 사업**
-기간: 2022-05-01 ~ 2022-11-30
-역할: 데이터 전처리 및 합성데이터 생성 
+* 기간: 2022-05-01 ~ 2022-11-30
+* 역할: 데이터 전처리 및 합성데이터 생성 
 
 **사업명: (보건산업진흥원) 수요자 맞춤형 의료 인공지능 임상실증 연구 지원센터 구축**
-기간: 2022-07-01 ~ 2023-12-31
-역할: 데이터 관리
+* 기간: 2022-07-01 ~ 2023-12-31
+* 역할: 데이터 관리
 
 Code repository: [GitLab](https://github.com/KY-HDC){:target="_blank"}
 {: .text-center}
