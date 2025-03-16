@@ -3,16 +3,8 @@ layout: post
 modalID: modalUdacityLaneLineDetection1
 permalink: /:categories/:slug/
 main_title: 미스트랄 파인튜닝
-# start_date: 2018-07-14
-# end_date:   2018-07-17
-thumb_image_url: assets/post_assets/udacity-lane-line-detection-1/images/original/mistral_demo.png
 
-# images:
-#   - {
-#     url: "assets/post_assets/udacity-lane-line-detection-1/videos/gif/solidWhiteRight.gif",
-#     caption: "A snapshot of solidWhiteRight.mp4. solidYellowLeft.gif is very similar to this video, so I have decided to not include it.",
-#     id: "solidWhiteRight"
-#   }
+thumb_image_url: assets/post_assets/udacity-lane-line-detection-1/images/original/mistral_demo.png
 
 category: projects
 project_title: "미스트랄 파인튜닝"
