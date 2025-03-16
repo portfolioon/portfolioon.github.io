@@ -2,7 +2,7 @@
 layout: post
 modalID: modalUdacityLaneLineDetection1
 permalink: /:categories/:slug/
-main_title: Lane Line Detection - Basic
+main_title: 미스트랄 파인튜닝
 # start_date: 2018-07-14
 # end_date:   2018-07-17
 thumb_image_url: assets/post_assets/udacity-lane-line-detection-1/images/original/mistral_demo.png
@@ -15,8 +15,8 @@ thumb_image_url: assets/post_assets/udacity-lane-line-detection-1/images/origina
 #   }
 
 category: projects
-project_title: "Simple lane line detection"
-thumb_text: Lane line detection in a simple video using Hough transform
+project_title: "미스트랄 파인튜닝"
+thumb_text: 미스트랄 파인튜닝
 tech:
   - LLMs
 size: medium
