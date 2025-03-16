@@ -20,6 +20,8 @@ size: large
 
 <div class="post-content-markdown">
 
+## Projects
+
 **사업명: (한국지능정보사회진흥원) 인공지능 학습용 데이터 구축 사업**
 * 기간: 2020-08-10 ~ 2020-12-31
 * 역할: 데이터 전처리
@@ -48,7 +50,16 @@ size: large
 * 기간: 2022-07-01 ~ 2023-12-31
 * 역할: 데이터 관리
 
-Code repository: [GitLab](https://github.com/KY-HDC){:target="_blank"}
+
+### Paper: 
+An Effective Representation Learning Approach: The Integrated Self-Supervised Pre-Training Models of StyleGAN2-ADA and DINO for Colon Polyp Images
+* [Link](https://ieeexplore.ieee.org/document/10359525?denied=)
+
+### Project-Page: 
+주요질환 이미지 합성데이터(X-ray)
+* [Link](https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=71521)
+
+Code repository: [GitHub](https://github.com/KY-HDC){:target="_blank"}
 {: .text-center}
 
 </div>
