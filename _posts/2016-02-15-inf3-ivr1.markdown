@@ -9,32 +9,32 @@ thumb_image_url: assets/post_assets/inf3-ivr-1/videos/gif/HAR-Annotator-demo.gif
 images:
   - {
     url: "assets/post_assets/inf3-ivr-1/videos/gif/S001C001P001R001A043_rgb_hp.gif",
-    caption: "Perfectly detected and classified 'robots'. The triangles are not noisy at all, corners are detected perfectly and 'robots' are each assigned a unique color value, most likely matching with the actual color of the 'robot'.",
+    caption: "Falling",
     id: "filter_correct"
   }
   - {
     url: "assets/post_assets/inf3-ivr-1/videos/gif/S001C001P001R001A050_rgb_hp.gif",
-    caption: "Insufficiently detailed detection. Either color detection thresholds are not fine enough, or dilation is too strong.",
+    caption: "Slapping",
     id: "filter_test"
   }
   - {
     url: "assets/post_assets/inf3-ivr-1/videos/gif/S001C001P001R001A059_rgb_hp.gif",
-    caption: "Due to noise, incomplete triangles are formed, preventing corner detection. Therefore, these shapes cannot be classified as 'robots'. Furthermore, noise below the 'robot' is visible, hinting the lack of erosion. A difficult situation as the two upper triangles are too eroded.",
+    caption: "Walking towards",
     id: "filter_noisy"
   }
   - {
     url: "assets/post_assets/inf3-ivr-1/videos/gif/S001C001P004R002A051_rgb_hp.gif",
-    caption: "The three 'robots' on the first background. You can see that our methods were successful in plotting their motion path.",
+    caption: "Kicking legs",
     id: "background_1"
   }
   - {
     url: "assets/post_assets/inf3-ivr-1/videos/mp4/S001C001P007R002A023_rgb_hp.mp4",
-    caption: "The three 'robots' on the first background. You can see that our methods were successful in plotting their motion path.",
+    caption: "Hand waving",
     id: "background_1"
   }
   - {
     url: "assets/post_assets/inf3-ivr-1/videos/mp4/S001C002P005R002A009_rgb_hp.mp4",
-    caption: "The three 'robots' on the first background. You can see that our methods were successful in plotting their motion path.",
+    caption: "Standing up",
     id: "background_1"
   }
 
