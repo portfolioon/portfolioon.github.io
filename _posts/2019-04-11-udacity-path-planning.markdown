@@ -8,12 +8,10 @@ thumb_image_url: assets/post_assets/udacity-path-planning/videos/webm/react-to-o
 images:
   - {
     url: "assets/post_assets/udacity-path-planning/videos/gif/react-to-other-change.gif",
-    caption: "The path planner reacts to another car changing a lane. Full video: https://www.youtube.com/watch?v=VBae1-AQLpY",
     id: "react-to-other-change"
   }
   - {
     url: "assets/post_assets/udacity-path-planning/videos/gif/double-lane-change.gif",
-    caption: "The path planner waits until it has enough space on the right, and then changes a lane. Because the right lane is free, it changes again. Full video: https://www.youtube.com/watch?v=VBae1-AQLpY",
     id: "double-lane-change"
   }
   - {
