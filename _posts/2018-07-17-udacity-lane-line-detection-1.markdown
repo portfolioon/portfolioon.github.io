@@ -11,7 +11,6 @@ project_title: "미스트랄 파인튜닝"
 thumb_text: 미스트랄 파인튜닝
 tech:
   - LLMs
-size: medium
 
 ---
 

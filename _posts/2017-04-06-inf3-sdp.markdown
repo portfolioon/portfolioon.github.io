@@ -28,7 +28,7 @@ tech:
   - Python
   - Numpy
   - Linux
-size: medium
+
 collaborators:
   - 가이랏
 

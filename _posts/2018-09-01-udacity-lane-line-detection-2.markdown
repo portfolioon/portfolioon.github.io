@@ -44,7 +44,6 @@ tech:
   - OpenCV
   - Python
   - Numpy
-size: large
 
 ---
 

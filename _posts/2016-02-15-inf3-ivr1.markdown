@@ -47,7 +47,6 @@ collaborators:
 tech:
   - Computer Vision
   - Action Detection
-size: medium
 
 ---
 

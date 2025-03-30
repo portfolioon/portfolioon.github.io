@@ -42,7 +42,6 @@ tech:
   - Python
   - Numpy
   - Linux
-size: medium
 
 ---
 

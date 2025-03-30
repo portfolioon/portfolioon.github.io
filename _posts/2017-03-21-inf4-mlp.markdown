@@ -50,7 +50,6 @@ tech:
   - Numpy
   - Jupyter Notebooks
   - Linux
-size: large
 
 ---
 

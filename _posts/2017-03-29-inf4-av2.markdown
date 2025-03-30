@@ -25,11 +25,10 @@ course_name: Inf4 - Advanced Vision
 project_title: "다중 카메라 다중 객체 추적(MC-MOT)"
 thumb_text: 다중 카메라 다중 객체 추적(MC-MOT)
 collaborators:
-  - Calum McLeod
+  - 가이랏
 tech:
   - Computer Vision
   - Pytorch
-# size: medium
 
 ---
 

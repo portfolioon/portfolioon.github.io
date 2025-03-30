@@ -27,7 +27,6 @@ tech:
   - ViTs
   - Text2img
   - OCR
-size: extra-small
 
 ---
 

@@ -14,7 +14,6 @@ tech:
   - Yolov8
   - DeepSort
   - PyQt5
-size: medium
 
 ---
 

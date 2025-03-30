@@ -25,7 +25,6 @@ thumb_text: 시뮬레이션 자동차의 경로 계획.
 tech:
   - Planning
   - C++
-size: large
 unlisted: false
 
 ---

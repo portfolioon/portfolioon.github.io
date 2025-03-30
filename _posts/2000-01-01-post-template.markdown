@@ -42,7 +42,6 @@ project_title: "Project Template"
 thumb_text: A project template to be reused
 tech:
   - Jekyll
-size: extra-small
 collaborators:
   - Person 1
 unlisted: true
