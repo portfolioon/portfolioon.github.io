@@ -36,11 +36,11 @@ collaborators:
 
 <div class="post-content-markdown">
 
-실시간 비전 분석
-{: .text-left}
-
 #### 사무실 모니터링
-For strategy, we have developed both low level behaviors (passing, blocking, kicking) and higher level behaviors such as kicking the goal, defending against an attack and positioning to receive the ball. Ultimately, we chose to specialize our robot as the goalkeeper and focused on developing algorithms for that.
+직장 분석을 위한 포괄적인 실시간 모니터링 시스템으로, 근로자의 존재, 부재 및 활동 패턴을 감지합니다. 
+이 고급 컴퓨터 비전 플랫폼은 최첨단 딥 러닝 알고리즘을 사용하여 직원의 움직임을 추적하고, 작업 행동을 분석하고, 
+모니터링 환경 내에서 물체의 거리와 속도를 추정합니다. 작업 공간 효율성을 최적화하고, 안전 준수를 보장하고, 
+경영 의사 결정을 위한 실행 가능한 통찰력을 제공하는 데 적합합니다.
 {: .text-left}
 
 #### 활동 분석기
