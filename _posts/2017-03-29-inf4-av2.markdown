@@ -2,51 +2,44 @@
 layout: post
 modalID: modalAv2
 permalink: /:categories/:slug/
-main_title:  Inf4 - Advanced Vision
-start_date:   2016-02-16
-end_date:     2016-03-29
+main_title:  다중 카메라 다중 객체 추적(MC-MOT)
+# start_date:   2016-02-16
+# end_date:     2016-03-29
 thumb_image_url: assets/post_assets/inf4-av-2/images/original/demo2.png
 images:
   - {
     url: "assets/post_assets/inf4-av-2/images/original/img_with_matches.png",
-    caption: "FAST corner matching in consecutive frames of the horizontally moving plane. Consecutive frames are superimposed in gray and cyan.",
     id: "feature_displacement"
   }
   - {
     url: "assets/post_assets/inf4-av-2/images/original/demo2.png",
-    caption: "A single image of horizontally moving plane.",
     id: "x_motion_plane"
   }
   - {
     url: "assets/post_assets/inf4-av-2/images/original/demo3.png",
-    caption: "RMS errors in region of interest of the horizontally moving plane, also expressing the motion. Red regions represent the highest error and blue represent the lowest.",
     id: "y_motion_colour"
   }
 
 category: projects
 course_name: Inf4 - Advanced Vision
-project_title: "3D Reconstruction Evaluation"
-thumb_text: Evaluation of 3D reconstruction data, given series of source images of a moving textured plane
+project_title: "다중 카메라 다중 객체 추적(MC-MOT)"
+thumb_text: 다중 카메라 다중 객체 추적(MC-MOT)
 collaborators:
   - Calum McLeod
 tech:
   - Computer Vision
-  - Matlab
-size: medium
+  - Pytorch
+# size: medium
 
 ---
 
 <div class="post-content-markdown">
 
-A 3D reconstruction of a textured plane has been carried out. In different sets, the plane was either still or moving either vertically, horizontally, or away with respect to the camera. Given the source images and resulting pointcloud data, the task was to evaluate the accuracy of the reconstruction.
+여러 카메라 피드를 동기화하여 다양한 관점에서 동시에 수많은 객체를 추적하는 정교한 컴퓨터 비전 프레임워크입니다. 
+YOLO의 최첨단 딥 러닝 알고리즘으로 구동되는 MC-MOT는 대상이 카메라 시야 사이를 이동하더라도 일관된 객체 식별 및 궤적 매핑을 유지합니다.
 {: .text-left}
 
-We have applied FAST Corner detection to detect and features of the texture on the plane, letting us track its motion over time. A rectangular region of interest was selected for each dataset using the observed displacement of the features to move together with the plane. The Root Mean Square error was computed in this region to detect the reconstruction accuracy, averaged over time. The resulting error was visualized as a colored plot.
-{: .text-left}
-
-Report: [Google Drive](https://drive.google.com/open?id=1ZpRGiCunMkxpUFoPKrcb-0iSWPA-pJkz){:target="_blank"}
-{: .text-center}
-Code Repository: [GitLab](https://gitlab.com/LinasKo/Inf4-AV-CW2){:target="_blank"}
+Code Repository: [GitHub](https://github.com/Harry-KIT){:target="_blank"}
 {: .text-center}
 
 </div>
