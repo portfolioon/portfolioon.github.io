@@ -2,29 +2,26 @@
 layout: post
 modalID: modalSdp
 permalink: /:categories/:slug/
-main_title: System Design Project
-start_date: 2022-10-05
-end_date:   2023-04-14
+main_title: 실시간 비전 분석
+# start_date: 2022-10-05
+# end_date:   2023-04-14
 thumb_image_url: assets/post_assets/inf3-sdp/videos/gif/juggling_demo_50.gif
 images:
   - {
     url: "assets/post_assets/inf3-sdp/videos/gif/work.gif",
-    caption: "The usual view as seen during a robot game for the operator. Robots that are detected have their orientation shown. Rectangles represent threat (red) and defense zones (black).",
     id: "sdp_in_game"
   }
   - {
     url: "assets/post_assets/inf3-sdp/videos/gif/juggling_demo_75.gif",
-    caption: "Color picker available to the operator during the match. If needed, the operator can rebalance the color detection thresholds and generally observe the state of the robot.",
     id: "sdp_color_picker"
   }
   - {
     url: "assets/post_assets/inf3-sdp/videos/gif/car.gif",
-    caption: "Interference of the analogue camera, as seen during the development of the vision system.",
     id: "sdp_interference_example"
   }
 category: projects
-project_title: "System Design Project - Making a Football Robot"
-thumb_text: "An AI-controlled cooperative football playing robot."
+project_title: "실시간 비전 분석"
+thumb_text: "실시간 비전 분석"
 tech:
   - Computer Vision
   - OpenCV
@@ -39,45 +36,19 @@ collaborators:
 
 <div class="post-content-markdown">
 
-The System Design Project was a course that showed us how large teams interact and large projects are built.
+실시간 비전 분석
 {: .text-left}
 
-In teams of 6, we were tasked with building a robot that can autonomously play football in 2v2 matches. For the vision system, there was an overhead camera, allowing us to observe distinct colored plates on the robots. The processing of the feed happened on a PC near the playpen. We then used radio frequencies to send commands to the robot, which had an Arduino that parsed the commands and converted them into low level control actions of the robot.
-{: .text-left}
-
-### Vision System
-I have mostly worked on the vision system. Here, we joined forces with the team that we would be ultimately playing together with. We managed to create a system that can reliably detect and tracks the robots, yet requires a bit of manual tinkering when the video feed signal is weaker (e.g. during final matches that were also live-streamed to another room).
-{: .text-left}
-
-Each robot had a plate above it with 5 colored circles on it. One in the center represented the team of the robot in 2v2 matches (blue, yellow). Three of the four outer circles were of one color, and the remaining one of another (green, pink). This helped determine the orientation of the robot. In addition to the robot circles, we also tracked the ball which was a red sphere on the field, approximately similar in size to the circles on the robot plate.
-{: .text-left}
-
-First, we used color-based thresholding to detect regions of color, corresponding to the colors of circles. They were clustered to produce possible robot plates. I believe that in our system both robots of our team needed to be detected for the tracking algorithm to work. Since we had the measurements of the plate, we could easily determine the position of the robots, assuming the circles were detected correctly; however that was often not the case. Due to the lighting conditions, often only about half of the circle area was successfully detected. We addressed this in several ways:
-* We developed a user interface using TKinter library that allows changing color detection thresholds before the match.
-* When we find good color thresholds, we would store them in a file, for each PC that we would use.
-{: .text-left}
-
-Secondly, the view we saw from the camera was cropped to only include the field of play. This allowed us to ignore some areas that were sometimes detected as colored circles. Furthermore, shadows of spectators were then mostly excluded from the resulting image. Then, the playing area was manually marked to split into regions of interest (both goal areas, playing field sides).
-{: .text-left}
-
-### Other Areas of Work
-In addition to the vision system, I have worked on some other areas (strategy) more than others (robot design, gyroscope calibration, communication, low level code).
-{: .text-left}
-
-#### Strategy
+#### 사무실 모니터링
 For strategy, we have developed both low level behaviors (passing, blocking, kicking) and higher level behaviors such as kicking the goal, defending against an attack and positioning to receive the ball. Ultimately, we chose to specialize our robot as the goalkeeper and focused on developing algorithms for that.
 {: .text-left}
 
-#### Low level control
-The robot was calibrated to move appropriately after receiving a command via radio frequencies. This was Driven by the Arduino on the robot.
+#### 활동 분석기
+이 작업은 YOLOv8이라는 놀라운 딥 러닝 컴퓨터 비전 최첨단(SOTA) 방법을 사용하여 저글링을 자동으로 계산하는 데 사용됩니다.
 {: .text-left}
 
-#### Communications
-The system had many versions but ultimately allowed us to have reliable communications with the robot. A key feature was a status check for the communication, as the RF stick was very unreliable.
-{: .text-left}
-
-#### Robot Design
-We had to construct a robot out of Lego, that could play football autonomously. The robot had a size limit along all dimensions, had to carry the Arduino, a battery pack, have a kicker with a motor, fit the motors for the wheels, hold a plate above for identification and have grippers for catching the ball in motion. We also had to decide if we needed any additional parts, within a given limit of £100 (we decided to get 4 omni-wheels). Due to space constraints, robot design was a very difficult task.
+#### 속도 및 거리 추정기
+이 코드는 특정 지점까지의 상대 속도 및 거리를 추정할 수 있으며, 차량 식별은 YOLOv8의 도움으로 이루어졌습니다.
 {: .text-left}
 
 </div>
