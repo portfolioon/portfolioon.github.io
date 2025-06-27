@@ -5,35 +5,26 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
 title: 가이랏
 email: ai.devveloper@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: > 
   AI 연구자 및 개발자 - 딥러닝 애호가
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "/"
+url: "" 
 
-# Social media profiles - feel free to add more here
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/ai-devveloper/ 
-  # - title: gitlab
-  #   url: https://gitlab.com/LinasKo
   - title: github
     url: https://github.com/aidevveloper
-  # - title: bitbucket
-  #   url: https://bitbucket.org/DeKondra/
 
-# Address information
 location: Seoul, South Korea
 address:
 
-# Build settings
 markdown: kramdown
 kramdown:
   parse_block_html: true
 
-# Defaults
 defaults:
   -
     scope:
@@ -41,5 +32,4 @@ defaults:
     values:
       thumb_image_url: "assets/test_post/images/1-submarine.png"
 
-# Particles in the background
 show_particles: true
