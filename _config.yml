@@ -11,18 +11,14 @@ email: ai.devveloper@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   AI 연구자 및 개발자 - 딥러닝 애호가
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "aidevveloper.github.io" # the base hostname & protocol for your site
 
-# Social media profiles - feel free to add more here
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/ai-devveloper/ 
-  # - title: gitlab
-  #   url: https://gitlab.com/LinasKo
   - title: github
-    url: https://github.com/Harry-KIT
-  # - title: bitbucket
-  #   url: https://bitbucket.org/DeKondra/
+    url: https://github.com/aidevveloper
+
 
 # Address information
 location: Seoul, South Korea
