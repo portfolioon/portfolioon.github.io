@@ -19,7 +19,7 @@ images:
     id: "overhead_view"
   }
   - {
-    url: "assets/post_assets/crab/videos/mp4/birdeye_result.mp4",
+    url: "assets/post_assets/crab/videos/mp4/bird_eye_demo.mp4",
     id: "fast_features"
   }
   - {
