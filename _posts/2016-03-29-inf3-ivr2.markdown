@@ -4,7 +4,7 @@ modalID: modalIvr2
 permalink: /:categories/:slug/
 main_title:  양식장 자동 먹이 모니터링 시스템 
 
-thumb_image_url: assets/post_assets/inf3-ivr-2/videos/gif/demo_eel.gif
+thumb_image_url: assets/post_assets/inf3-ivr-2/videos/gif/bird_eye_demo.mp4
 
 category: projects
 project_title: "양식장 자동 먹이 모니터링 시스템"
